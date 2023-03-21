@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply overflow-x-hidden
+    }
+    p{
+        @apply text-[#373839]
+    }
+    h1, h2, h3{
+        @apply text-[#21252a]
+    }
+}
+
+.header .navigation nav ul li a{
+    @apply px-2 py-3 hover:text-secondary hover:border-b-2 hover:border-b-secondary
+}
+
+
+.slider .tns-outer {
+    @apply relative justify-center
+}
+
+.slider .tns-outer .tns-controls button[data-controls]{
+    @apply absolute top-0 bottom-0 z-10
+}
+
+
+.slider .tns-outer .tns-controls button i{
+    @apply bg-white px-6 py-4 rounded-full text-primary font-bold text-lg 
+}
+
+.slider .tns-outer .tns-controls button[data-controls="prev"]{
+    @apply left-10
+}
+
+.slider .tns-outer .tns-controls button[data-controls="next"]{
+    @apply right-10
+}
+
+.slider .tns-outer button[data-action]{
+    @apply hidden !important;
+}
+
+
+.reqs__items i{
+    @apply text-primary text-3xl
+}
+
+.reqs__items {
+    @apply bg-white p-10 rounded-xl drop-shadow-sm sm:bg-transparent min-h-[250px] mr-3
+}
+
+.phone__item{
+    @apply mb-3 lg:mb-0
+}
+
+
+.learnMore .tns-nav{
+    @apply hidden;
+}
+
+.learnMore__fa{
+    @apply text-3xl text-primary py-2
+}
+
+.learnMore__items{
+    @apply hover:bg-white p-5 lg:p-10 rounded-xl hover:drop-shadow-md  min-h-[250px] md:min-h-[350px]
+}
+
+.footer a{
+    @apply block mb-6 hover:text-secondary
+}
+
+.footer i{
+    @apply text-primary text-lg border-2 border-red-700 rounded-full px-[10px] py-[5px]
+}
+
+
+
+.commitment_container {
+    min-height: 780px;
+    margin-top: 72px;
+    margin: 102px 0 72px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply relative;
+}
+
+
+.lower_div, .upper_div {
+    width: 1050px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    background: #e11931;
+}
+
+.upper_div {
+    transform: skew(0deg,6deg);
+    height: 45%;
+    top: 10px;
+}
+
+.lower_div {
+    transform: skew(0deg,-6deg);
+    height: 60%;
+    bottom: 10px;
+}
+
+.inner_div {
+    width: 100%;
+    background: #e11931;
+    position: absolute;
+    left: 0;
+    height: 458px;
+    z-index: 1;
+    width: 917px;
+}
