@@ -58,7 +58,7 @@
 }
 
 
-.learnMore .tns-nav{
+.learnMore .tns-nav, .requirements .tns-nav{
     @apply hidden;
 }
 
